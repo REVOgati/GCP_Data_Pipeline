@@ -1,0 +1,7 @@
+.venv
+venv/*
+myvenv/*
+.myvenv
+.myvenv/*
+fwg-key.json
+repository_documentation.md
