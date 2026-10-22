@@ -1,0 +1,132 @@
+[0m09:34:46.514519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ddd7c0800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ddd9026c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ddde0f560>]}
+
+
+============================== 09:34:46.519229 | e6eb1bfc-057e-4d63-bf99-1d736511d237 ==============================
+[0m09:34:46.519229 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:34:46.520350 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init dbt_freshwatergrocery', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'target_path': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'empty': 'None', 'version_check': 'True', 'write_json': 'True', 'profiles_dir': '/home/tiropgarreth/.dbt', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_format': 'default', 'quiet': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'printer_width': '80', 'introspect': 'True', 'partial_parse': 'True', 'hints_enabled': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m09:34:46.521286 [debug] [MainThread]: Tracking: tracking
+[0m09:34:46.535534 [info ] [MainThread]: Creating dbt configuration folder at /home/tiropgarreth/.dbt
+[0m09:34:46.537640 [debug] [MainThread]: Starter project path: /home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:34:46.542312 [info ] [MainThread]: Setting up your profile.
+[0m09:35:05.413510 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+list index out of range
+[0m09:35:05.416392 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/cli/requires.py", line 211, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/cli/requires.py", line 157, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/cli/main.py", line 505, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/task/init.py", line 363, in run
+    self.setup_profile(profile_name)
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/task/init.py", line 264, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/task/init.py", line 246, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m09:35:05.418541 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 19.026089, "process_in_blocks": "0", "process_kernel_time": 0.242488, "process_mem_max_rss": "107744", "process_out_blocks": "64", "process_user_time": 2.339035}
+[0m09:35:05.419432 [debug] [MainThread]: Command `dbt init` failed at 09:35:05.419261 after 19.03 seconds
+[0m09:35:05.420187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ddda73da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ddcc4d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2de122f6e0>]}
+[0m09:35:05.420965 [debug] [MainThread]: Flushing usage events
+[0m09:35:05.817731 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:36:29.866573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e4673290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e3fadac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e64a9940>]}
+
+
+============================== 09:36:29.875561 | b271c7f4-65be-47dc-bb17-134cba778f56 ==============================
+[0m09:36:29.875561 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:36:29.877064 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'partial_parse': 'True', 'quiet': 'False', 'no_print': 'None', 'empty': 'None', 'profiles_dir': '/home/tiropgarreth/.dbt', 'indirect_selection': 'eager', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'debug': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init dbt_freshwatergrocery', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'log_cache_events': 'False', 'log_path': 'logs', 'introspect': 'True', 'static_parser': 'True', 'warn_error': 'None'}
+[0m09:36:29.878076 [debug] [MainThread]: Tracking: tracking
+[0m09:36:29.899944 [info ] [MainThread]: A project called dbt_freshwatergrocery already exists here.
+[0m09:36:29.902627 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.2553598, "process_in_blocks": "0", "process_kernel_time": 0.366312, "process_mem_max_rss": "107792", "process_out_blocks": "8", "process_user_time": 2.873652}
+[0m09:36:29.903785 [debug] [MainThread]: Command `dbt init` succeeded at 09:36:29.903568 after 0.26 seconds
+[0m09:36:29.904895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e4ea3020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e64a9940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7885e4150890>]}
+[0m09:36:29.905755 [debug] [MainThread]: Flushing usage events
+[0m09:36:30.309389 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:40:26.829050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794add1f8230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794add071760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794adf0e1a00>]}
+
+
+============================== 09:40:26.834181 | 31eb5c71-c89a-4fe6-ac2c-0c5db466ff0b ==============================
+[0m09:40:26.834181 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:40:26.835512 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'empty': 'None', 'hints_enabled': 'True', 'invocation_command': 'dbt init dbt_freshwatergrocery', 'log_path': 'logs', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'quiet': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'profiles_dir': '/home/tiropgarreth/.dbt', 'no_print': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_format': 'default'}
+[0m09:40:26.836161 [debug] [MainThread]: Tracking: tracking
+[0m09:40:26.852806 [debug] [MainThread]: Starter project path: /home/tiropgarreth/GCP_Data_Pipeline/.myvenv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:40:26.858057 [info ] [MainThread]: Setting up your profile.
+[0m09:42:12.832492 [info ] [MainThread]: Profile dbt_freshwatergrocery written to /home/tiropgarreth/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m09:42:12.835875 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m09:42:12.837356 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m09:42:12.838214 [info ] [MainThread]: python version: 3.12.3
+[0m09:42:12.839167 [info ] [MainThread]: python path: /home/tiropgarreth/GCP_Data_Pipeline/.myvenv/bin/python3
+[0m09:42:12.840002 [info ] [MainThread]: os info: Linux-6.6.157+-x86_64-with-glibc2.39
+[0m09:42:12.946256 [info ] [MainThread]: Using profiles dir at /home/tiropgarreth/.dbt
+[0m09:42:12.947325 [info ] [MainThread]: Using profiles.yml file at /home/tiropgarreth/.dbt/profiles.yml
+[0m09:42:12.948314 [info ] [MainThread]: Using dbt_project.yml file at /home/tiropgarreth/GCP_Data_Pipeline/dbt_freshwatergrocery/dbt_project.yml
+[0m09:42:12.949274 [info ] [MainThread]: adapter type: bigquery
+[0m09:42:12.950293 [info ] [MainThread]: adapter version: 1.12.1
+[0m09:42:13.128711 [info ] [MainThread]: Configuration:
+[0m09:42:13.129693 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:42:13.130591 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m09:42:13.131467 [info ] [MainThread]: Required dependencies:
+[0m09:42:13.132373 [debug] [MainThread]: Executing "git --help"
+[0m09:42:13.136838 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:42:13.137747 [debug] [MainThread]: STDERR: "b''"
+[0m09:42:13.138420 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:42:13.139293 [info ] [MainThread]: Connection:
+[0m09:42:13.140381 [info ] [MainThread]:   method: oauth
+[0m09:42:13.141318 [info ] [MainThread]:   database: fresh-water-grocery-company
+[0m09:42:13.142435 [info ] [MainThread]:   execution_project: fresh-water-grocery-company
+[0m09:42:13.143313 [info ] [MainThread]:   schema: fwg-raw
+[0m09:42:13.144264 [info ] [MainThread]:   location: EU
+[0m09:42:13.145270 [info ] [MainThread]:   priority: interactive
+[0m09:42:13.146209 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m09:42:13.147185 [info ] [MainThread]:   reservation: None
+[0m09:42:13.148121 [info ] [MainThread]:   impersonate_service_account: None
+[0m09:42:13.148997 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m09:42:13.149848 [info ] [MainThread]:   job_retries: 1
+[0m09:42:13.150771 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m09:42:13.151709 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m09:42:13.152583 [info ] [MainThread]:   job_link_info_level_log: False
+[0m09:42:13.153393 [info ] [MainThread]:   timeout_seconds: 300
+[0m09:42:13.154359 [info ] [MainThread]:   client_id: None
+[0m09:42:13.155262 [info ] [MainThread]:   token_uri: None
+[0m09:42:13.156206 [info ] [MainThread]:   compute_region: None
+[0m09:42:13.157145 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m09:42:13.158067 [info ] [MainThread]:   gcs_bucket: None
+[0m09:42:13.159004 [info ] [MainThread]:   dataproc_batch: None
+[0m09:42:13.160155 [info ] [MainThread]: Registered adapter: bigquery=1.12.1
+[0m09:42:13.389469 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m09:42:13.390304 [debug] [MainThread]: On debug: select 1 as id
+[0m09:42:13.391199 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:42:13.981307 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fresh-water-grocery-company&j=bq:EU:22643775-eb59-4521-a43b-ebb0641c1138&page=queryresults
+[0m09:42:14.144040 [debug] [MainThread]: SQL status: OK in 0.162 seconds
+[0m09:42:14.413068 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:42:14.414144 [info ] [MainThread]: [32mAll checks passed![0m
+[0m09:42:14.415254 [info ] [MainThread]: Your new dbt project "dbt_freshwatergrocery" was created!
+Initialized new project in /home/tiropgarreth/GCP_Data_Pipeline/dbt_freshwatergrocery/dbt_freshwatergrocery
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:42:14.416711 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 107.73911, "process_in_blocks": "4640", "process_kernel_time": 0.886157, "process_mem_max_rss": "228468", "process_out_blocks": "96", "process_user_time": 4.158362}
+[0m09:42:14.417970 [debug] [MainThread]: Command `dbt init` succeeded at 09:42:14.417788 after 107.74 seconds
+[0m09:42:14.418626 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:42:14.419305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794add920b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794adc2c1f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x794adf0e1a00>]}
+[0m09:42:14.420133 [debug] [MainThread]: Flushing usage events
+[0m09:42:14.793686 [debug] [MainThread]: An error was encountered while trying to flush usage events

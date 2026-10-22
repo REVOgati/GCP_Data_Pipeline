@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: fwg_raw
+    description: "Raw landing tables ingested from the e-grocery operational databases."
+    database: fresh-water-grocery-company  # Replace with your GCP Project ID
+    schema: fwg_raw                   # Your raw BigQuery dataset name
+    tables:
+      - name: raw_products
+        description: "Master catalog containing product attributes, perishability flags, and pricing."
+      - name: raw_orders
+        description: "Header-level order records, customer references, and delivery slot details."
+      - name: raw_deliveries
+        description: "Rider dispatch timestamps, delivery fulfillment logs, and travel distances."
+      - name: raw_inventory
+        description: "Batch-level warehouse stock logs, harvest dates, and expiry tracking."
